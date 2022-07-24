@@ -1,5 +1,6 @@
-import Home from "./views/home";
-import About from "./views/about";
+import { Outlet } from "react-router-dom";
+
+import NavBar from "./components/nav-bar";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
@@ -8,10 +9,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Home></Home>
-      <About></About>
-      <Footer></Footer>
+      <Header />
+      <NavBar />
+      <Outlet />
+      <Footer />
     </div>
   );
 }
